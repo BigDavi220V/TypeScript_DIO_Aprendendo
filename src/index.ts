@@ -70,4 +70,48 @@ let infos: (string | number)[] = ["felipe", 30, "davi",2547];
 let boleto:[string,number,number] = ["Água", 200, 10 ]
 
 /*arrays metodos*/
-dados.
+dados.pop();
+
+/*Datas */
+let aniversario:Date = new Date("2022-12-01 05:00")
+console.log(aniversario.toString());
+
+/*Funcoes */
+function addNumber(x:number, y:number): number{
+    return x + y; 
+}
+
+let soma : number = addNumber(4, 7);
+console.log(soma);
+
+function addToHello(name: string): string{
+    return `Hello ${name}`
+}
+console.log(addToHello("Felipe"));
+
+function CallToPhone(phone:number | string):number |string{
+    return phone;
+}
+console.log(CallToPhone("718554415464"));
+
+//Funcoes Async
+
+async function getDatabase(id: number): Promise<number |string>{
+    return "felipe"
+}
+
+//interfaces (type x interfaces)
+type robot = {
+    id:number;
+    name:string;
+};
+
+
+interface robot2  {
+    id:number;
+    name:string
+};
+const bot: robot2 = {
+    id: 1,
+    name: "megaman"
+}
